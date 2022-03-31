@@ -24,5 +24,12 @@ class Pages extends Controller
         $contactView = new contact($this->getModel(), $this);
         $contactView->output();
     }
+    public function Admin()
+    {
+        $viewPath = VIEWS_PATH . 'pages/admin.php';
+        require_once $viewPath;
+        $adminView = new contact($this->getModel(), $this);
+        $adminView->output();
+    }
 
 }
