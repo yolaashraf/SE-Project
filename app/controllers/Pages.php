@@ -26,10 +26,26 @@ class Pages extends Controller
     }
     public function Admin()
     {
-        $viewPath = VIEWS_PATH . 'pages/admin.php';
+        $viewPath = VIEWS_PATH . 'pages/admin/admin.php';
         require_once $viewPath;
-        $adminView = new contact($this->getModel(), $this);
+        $adminView = new admin($this->getModel(), $this);
         $adminView->output();
+    }
+
+    public function Compose()
+    {
+        $viewPath = VIEWS_PATH . 'pages/admin/compose.php';
+        require_once $viewPath;
+        $composeView = new compose($this->getModel(), $this);
+        $composeView->output();
+    }
+
+    public function Mailbox()
+    {
+        $viewPath = VIEWS_PATH . 'pages/admin/mailbox.php';
+        require_once $viewPath;
+        $mailboxView = new mailbox($this->getModel(), $this);
+        $mailboxView->output();
     }
 
 }
