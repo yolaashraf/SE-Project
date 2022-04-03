@@ -29,6 +29,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <?php if (isset($_SESSION['user_name'])) : ?>
+              <li><a class="dropdown-item" href="pages/userProfile/userprofile">Profile</a></li>
               <li><a class="dropdown-item" href="users/logout">Logout</a></li>
             <?php else : ?>
               <li><a class="dropdown-item" href="<?php echo URLROOT . 'users/login'; ?>">Login</a></li>
