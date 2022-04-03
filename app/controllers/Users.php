@@ -102,10 +102,14 @@ class Users extends Controller
 
     public function createUserSession($user)
     {
-        $_SESSION['user_id'] = $user->id;
-        $_SESSION['user_name'] = $user->name;
+       $_SESSION['user_id'] = $user->id;
+       $_SESSION['user_name'] = $user->name;
         //header('location: ' . URLROOT . 'pages');
-        redirect('pages');
+    //    if($_SESSION['email'] ==/*"mofida mail"*/){
+    //         //redirect('admin');
+    //    }
+       //else 
+      redirect('pages');
     }
 
     public function logout()
@@ -114,7 +118,7 @@ class Users extends Controller
         unset($_SESSION['user_id']);
         unset($_SESSION['user_name']);
         session_destroy();
-        redirect('users/login');
+        redirect('public/index');
     }
 
     public function isLoggedIn()

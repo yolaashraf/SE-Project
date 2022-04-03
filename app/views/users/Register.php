@@ -6,18 +6,7 @@ class Register extends view
     $title = $this->model->title;
 
     require APPROOT . '/views/inc/header.php';
-    $text = <<<EOT
-    <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4"> $title</h1>
-    </div>
-  </div>
-
-  </div>
-  </div>
-  </div>
-EOT;
-    echo $text;
+   
     $this->printForm();
     require APPROOT . '/views/inc/footer.php';
   }
@@ -26,15 +15,18 @@ EOT;
   {
     $action = URLROOT . 'users/register';
     $loginUrl = URLROOT . 'users/login';
-
-    $text = <<<EOT
-    <div class="row">
-    <div class="col-md-6 mx-auto">
-    <div class="card card-body bg-light mt-5">
+   
+   ?>
+    <?php
+    echo "<form action='$action' method='post'>"
+    ?> 
+    <link rel="stylesheet" href="<?php echo URLROOT; ?>css/login.css">
+    <!-- <div class="row">
+    <div class="col-md-6 mx-auto"> -->
+    <!-- <div class="card card-body bg-light mt-5"> -->
     <h2>Sign Up</h2>
-    <form action="$action" method="post">
-EOT;
-    echo $text;
+   
+<?php
     $this->printName();
     $this->printEmail();
     $this->printPassword();
@@ -43,7 +35,7 @@ EOT;
     <div class="container">
       <div class="row mt-4">
         <div class="col">
-          <input type="submit" value="Register" class="form-control btn btn-lg btn-primary btn-block">
+          <input type="submit" value="Register" class="form-control btn btn-lg btn-danger btn-block">
         </div>
         <div class="col">
           <a href="$loginUrl" class="form-control btn btn-lg btn-block">Current user, login here</a>

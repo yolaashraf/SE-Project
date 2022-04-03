@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-light mb-4" style= "background-color:#E81F6D">
+<nav class="navbar navbar-expand-lg navbar-dark mb-4" style= "background-color:#ababab">
   <div class="container-fluid">
     <a class="navbar-brand" href="<?php echo URLROOT . 'index'; ?>">
-    <img src="setat.png" alt="El Setat Market Logo" class="logo" />
+    <img src="https://i.imgur.com/6lsNNMk.png" alt="El Setat Market Logo" class="logo-set" width="100" height="75" />
   </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

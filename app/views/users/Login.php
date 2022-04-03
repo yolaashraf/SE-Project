@@ -7,18 +7,7 @@ class Login extends view
 
     require APPROOT . '/views/inc/header.php';
     flash('register_success');
-    $text = <<<EOT
-    <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4"> $title</h1>
-    </div>
-  </div>
-
-  </div>
-  </div>
-  </div>
-EOT;
-    echo $text;
+   
     $this->printForm();
     require APPROOT . '/views/inc/footer.php';
   }
@@ -27,41 +16,40 @@ EOT;
   {
     $action = URLROOT . 'users/login';
     $registerUrl = URLROOT . 'users/register';
-
-    $text = <<<EOT
-    <div class="row">
-    <div class="col-md-6 mx-auto">
-    <div class="card card-body bg-light mt-5">
-    <h2>Login</h2>
-    <form action="$action" method="post">
-EOT;
-
-    echo $text;
+?>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="<?php echo URLROOT; ?>css/login.css">
+      <title>Login Form</title>
+    </head>
+    <body>
+      <?php
+    echo "<form action='$action' method='post'>"
+    ?> 
+    <h1>Login</h1> 
+            <div class="container">   
+                <label>Email : </label>   
+                <input type="text" placeholder="Enter Email" name="email" required>  
+                <label>Password : </label>   
+                <input type="password" placeholder="Enter Password" name="password" required>  
+                <button type="submit">Login</button>   
+                <input type="checkbox" checked="checked"> Remember me
+                <?php
+    echo "<a href='$registerUrl' class='form-control btn btn-lg btn-block'>Sign Up Here</a>"
+    ?>        
+            </div>   
+        </form> 
+    </body>
+    </html>
+    <?php
     $this->printEmail();
     $this->printPassword();
 
-    $text = <<<EOT
-    <div class="container">
-    <div class="checkbox mb-3 mt-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-      </div>
-      <div class="row mt-4">
-        <div class="col">
-          <input type="submit" value="Login" class="form-control btn btn-lg btn-primary btn-block">
-        </div>
-        <div class="col">
-          <a href="$registerUrl" class="form-control btn btn-lg btn-block">New User, Sign up</a>
-        </div>
-      </div>
-      </div>
-    </form>
-    </div>
-    </div>
-    </div>
-EOT;
-    echo $text;
+  
   }
 
   private function printEmail()
@@ -86,13 +74,13 @@ EOT;
   {
     $label = str_replace("_", " ", $fieldName);
     $label = ucwords($label);
-    $text = <<<EOT
-    <div class="form-group">
-      <label for="$fieldName"> $label: <sup>*</sup></label>
-      <input type="$type" name="$fieldName" class="form-control form-control-lg $valid" id="$fieldName" value="$val" required="">
-      <span class="invalid-feedback">$err</span>
-    </div>
-EOT;
-    echo $text;
+//     $text = <<<EOT
+//     <div class="form-group">
+//       <label for="$fieldName"> $label: <sup>*</sup></label>
+//       <input type="$type" name="$fieldName" class="form-control form-control-lg $valid" id="$fieldName" value="$val" required="">
+//       <span class="invalid-feedback">$err</span>
+//     </div>
+// EOT;
+//     echo $text;
   }
 }
