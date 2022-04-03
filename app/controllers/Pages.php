@@ -69,4 +69,12 @@ class Pages extends Controller
         $securityuserprofileView->output();
     }
 
+    public function Booking()
+    {
+        $viewPath = VIEWS_PATH . 'pages/booking.php';
+        require_once $viewPath;
+        $bookingView = new Booking($this->getModel(), $this);
+        $bookingView->output();
+    }
+
 }
