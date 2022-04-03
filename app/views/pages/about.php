@@ -24,16 +24,16 @@ class About extends View
 <div class="section">
 	<div class="container">
 	<div class="title">
-	<h1>About Us</h1>
+	<h1><center>About Us</center></h1>
 	</div>
 	<div class="content-section">
 				
         </div>
 		<div class="content">
-		  <h4>Social initiative by Mofida Shiha to empower young 
+		  <h4><center>Social initiative by Mofida Shiha to empower young 
           Egyptian female designers and innovators through providing the 
-          appropriate environment that introduce them to the market.</h4>
-		  <p>We all know about the famous TV Program (الستات مايعرفوش يكدبو)
+          appropriate environment that introduce them to the market.</center></h4>
+		  <p><center>We all know about the famous TV Program (الستات مايعرفوش يكدبو)
           This was the start for the program host Mofida
           Shiha to recognize the need for supporting the
           female talents that she host a segment of them
@@ -44,7 +44,7 @@ class About extends View
           female designers and innovators through
           providing the appropriate environment that
           introduce them to the market by promoting the
-          community knowledge of fashion and style.</p>
+          community knowledge of fashion and style.</center></p>
 		</div>
 
       
