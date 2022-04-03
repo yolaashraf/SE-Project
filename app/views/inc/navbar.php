@@ -20,6 +20,9 @@
     <li class="nav-item">  
       <a class="nav-link" href="<?php echo URLROOT . 'pages/booking'; ?>">Booking</a>
     </li>
+    <li class="nav-item">  
+      <a class="nav-link" href="<?php echo URLROOT . 'pages/userProfile/userprofile'; ?>">User Profile</a>
+    </li>
 		 <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <?php if (isset($_SESSION['user_id'])) {
@@ -31,7 +34,6 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <?php if (isset($_SESSION['user_name'])) : ?>
-              <li><a class="dropdown-item" href="pages/userProfile/userprofile">Profile</a></li>
               <li><a class="dropdown-item" href="users/logout">Logout</a></li>
             <?php else : ?>
               <li><a class="dropdown-item" href="<?php echo URLROOT . 'users/login'; ?>">Login</a></li>

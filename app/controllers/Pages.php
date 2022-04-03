@@ -54,21 +54,7 @@ class Pages extends Controller
         $userprofileView = new userprofile($this->getModel(), $this);
         $userprofileView->output();
     }
-    public function userProfile1()
-    {
-        $viewPath = VIEWS_PATH . 'pages/userProfile/billinginfo.php';
-        require_once $viewPath;
-        $billinginfoView = new billinginfo($this->getModel(), $this);
-        $billinginfoView->output();
-    }
-    public function userProfile2()
-    {
-        $viewPath = VIEWS_PATH . 'pages/userProfile/securityuserprofile.php';
-        require_once $viewPath;
-        $securityuserprofileView = new securityuserprofile($this->getModel(), $this);
-        $securityuserprofileView->output();
-    }
-
+    
     public function Booking()
     {
         $viewPath = VIEWS_PATH . 'pages/booking.php';
