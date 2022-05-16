@@ -1,44 +1,31 @@
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
-<html>
+<html style="font-size: 16px;">
   <head>
-<link rel="alternate" type="application/json+oembed" href="https://www.jotform.com/oembed/?format=json&amp;url=https%3A%2F%2Fform.jotform.com%2F220918800780557" title="oEmbed Form">
-<link rel="alternate" type="text/xml+oembed" href="https://www.jotform.com/oembed/?format=xml&amp;url=https%3A%2F%2Fform.jotform.com%2F220918800780557" title="oEmbed Form">
-<link rel="canonical" href="https://form.jotform.com/220918800780557" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
-<title>Booking</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-	<link rel="stylesheet" type="text/css" href="../../public/css/contactstyle.css">
-  <script type="text/javascript">JotForm.ownerView=true;</script>
-  <script src="https://cdn02.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
-<script src="https://cdn03.jotfor.ms/static/jotform.forms.js?3.3.32343" type="text/javascript"></script>
-<script src="https://cdn01.jotfor.ms/js/vendor/imageinfo.js?v=3.3.32343" type="text/javascript"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
-<script type="text/javascript">	/*JotForm.newDefaultTheme = false;
-	JotForm.extendsNewTheme = false;
-	JotForm.newPaymentUIForNewCreatedForms = false;
-
-	JotForm.init(function(){
-	/*INIT-START*/
-
-/*if (window.JotForm && JotForm.accessible) $('input_16').setAttribute('tabindex',0);
-      setTimeout(function() {
-          $('input_5').hint('ex: www.example.com');
-       }, 20);
-if (window.JotForm && JotForm.accessible) $('input_12').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_13').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_14').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_10').setAttribute('tabindex',0);
-if (window.JotForm && JotForm.accessible) $('input_19').setAttribute('tabindex',0);
-	/*INIT-END
-	});
-
-   JotForm.prepareCalculationsOnTheFly([null,null,null,null,{"name":"fullName4","qid":"4","text":"Full Name","type":"control_fullname"},{"name":"email5","qid":"5","text":"E-mail","type":"control_email"},{"name":"phoneNumber6","qid":"6","text":"Contact Number","type":"control_phone"},{"name":"address7","qid":"7","text":"Address","type":"control_address"},{"name":"birthDate","qid":"8","text":"Birth Date","type":"control_birthdate"},null,{"name":"adviceFor10","qid":"10","text":"Advice For me..! :)","type":"control_textarea"},{"name":"uploadYour11","qid":"11","text":"Upload your Photo","type":"control_fileupload"},{"name":"yourFavorite","qid":"12","subLabel":"a direct link if possible","text":"Your favorite Song","type":"control_textbox"},{"name":"yourFavorite13","qid":"13","subLabel":"a direct link if possible","text":"Your favorite movie","type":"control_textbox"},{"name":"aGift","qid":"14","text":"A Gift Which you like most","type":"control_textbox"},{"name":"friendsCall15","qid":"15","text":"Friends Call You as","type":"control_textbox"},{"name":"youLike16","qid":"16","text":"You Like to Call Me as","type":"control_textbox"},{"name":"iCall","qid":"17","text":"I call you as","type":"control_textbox"},null,{"name":"feedbackRegarding","qid":"19","text":"Feedback Regarding this e-slam-book","type":"control_textarea"},{"name":"submit","qid":"20","text":"Submit","type":"control_button"}]);
-   setTimeout(function() {
-JotForm.paymentExtrasOnTheFly([null,null,null,null,{"name":"fullName4","qid":"4","text":"Full Name","type":"control_fullname"},{"name":"email5","qid":"5","text":"E-mail","type":"control_email"},{"name":"phoneNumber6","qid":"6","text":"Contact Number","type":"control_phone"},{"name":"address7","qid":"7","text":"Address","type":"control_address"},{"name":"birthDate","qid":"8","text":"Birth Date","type":"control_birthdate"},null,{"name":"adviceFor10","qid":"10","text":"Advice For me..! :)","type":"control_textarea"},{"name":"uploadYour11","qid":"11","text":"Upload your Photo","type":"control_fileupload"},{"name":"yourFavorite","qid":"12","subLabel":"a direct link if possible","text":"Your favorite Song","type":"control_textbox"},{"name":"yourFavorite13","qid":"13","subLabel":"a direct link if possible","text":"Your favorite movie","type":"control_textbox"},{"name":"aGift","qid":"14","text":"A Gift Which you like most","type":"control_textbox"},{"name":"friendsCall15","qid":"15","text":"Friends Call You as","type":"control_textbox"},{"name":"youLike16","qid":"16","text":"You Like to Call Me as","type":"control_textbox"},{"name":"iCall","qid":"17","text":"I call you as","type":"control_textbox"},null,{"name":"feedbackRegarding","qid":"19","text":"Feedback Regarding this e-slam-book","type":"control_textarea"},{"name":"submit","qid":"20","text":"Submit","type":"control_button"}]);}, 20); *\
-</script>
-   </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="about us, About Us, INTUITIVE">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Booking</title>
+    <link rel="stylesheet" href="../../public/css/nicepage.css" media="screen">
+<link rel="stylesheet" href="../../public/css/booking.css" media="screen">
+    <script class="u-script" type="text/javascript" src="../../public/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../../public/js/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.10.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site1"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="booking">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  </head>
+  
 </html>
 
 <?php
@@ -50,124 +37,85 @@ class Booking extends view
     require APPROOT . '/views/inc/header.php';
     $text = <<<EOT
 
-    <div class="topic"><h2>Booking Form</h2></div>
-
-    <form class="jotform-form" action="https://submit.jotform.com/submit/220918800780557/" method="post" enctype="multipart/form-data" name="form_220918800780557" id="220918800780557" accept-charset="utf-8" autocomplete="on">
-      <input type="hidden" name="formID" value="220918800780557" />
-      <input type="hidden" id="JWTContainer" value="" />
-      <input type="hidden" id="cardinalOrderNumber" value="" />
-      <div role="main" class="form-all">
-        <ul class="form-section page-section">
-            
-          <li class="form-line form-line-column form-col-2" data-type="control_textbox" id="id_17">
-            <label class="form-label form-label-left" id="label_17" for="input_17"> Brand Name: </label>
-            <div id="cid_17" class="form-input">
-              <input type="text" id="input_17" name="q17_iCall" data-type="input-textbox" class="form-textbox" data-defaultvalue="" size="30" value="" maxLength="200" placeholder=" " data-component="textbox" aria-labelledby="label_17" />
-            </div>
-          </li>
-          
-          <li class="form-line form-line-column form-col-1 form-line-column-clear jf-required" data-type="control_email" id="id_5">
-            <label class="form-label form-label-left" id="label_5" for="input_5">
-              Instagram Link:
-              <span class="form-required">
-                *
-              </span>
-            </label>
-            <div id="cid_5" class="form-input jf-required">
-              <input type="link" id="input_5" name="q5_link5" class="form-textbox validate[required, Link]" data-defaultvalue="" size="30" value="" placeholder="ex: www.example.com" data-component="link" aria-labelledby="label_5" required="" />
-            </div>
-          </li>
-
-          <li class="form-line form-line-column form-col-1" data-type="control_textarea" id="id_10">
-            <label class="form-label form-label-top" id="label_10" for="input_10"> Purpose: </label>
-            <div id="cid_10" class="form-input-wide">
-              <textarea id="input_10" class="form-textarea" name="q10_adviceFor10" cols="55" rows="3" data-component="textarea" aria-labelledby="label_10"></textarea>
-            </div>
-          </li>
-        
-          <li class="form-line form-line-column form-col-4 jf-required" data-type="control_fileupload" id="id_11">
-            <label class="form-label form-label-top" id="label_11" for="input_11">
-              Brand Logo:
-              <span class="form-required">
-                *
-              </span>
-            </label>
-            <div id="cid_11" class="form-input-wide jf-required">
-              <input type="file" id="input_11" name="q11_uploadYour11" class="form-upload validate[required]" data-file-accept="pdf, doc, docx, xls, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-file-maxsize="10240" data-file-minsize="0" data-file-limit="0" data-component="fileupload" required="" />
-            </div>
-          </li>
-          
-          <li class="form-line form-line-column form-col-4 jf-required" data-type="control_fileupload" id="id_11">
-            <label class="form-label form-label-top" id="label_11" for="input_11">
-              First Picture of a Product Sold:
-              <span class="form-required">
-                *
-              </span>
-            </label>
-            <div id="cid_11" class="form-input-wide jf-required">
-              <input type="file" id="input_11" name="q11_uploadYour11" class="form-upload validate[required]" data-file-accept="pdf, doc, docx, xls, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-file-maxsize="10240" data-file-minsize="0" data-file-limit="0" data-component="fileupload" required="" />
-            </div>
-          </li>
-
-          <li class="form-line form-line-column form-col-4 jf-required" data-type="control_fileupload" id="id_11">
-            <label class="form-label form-label-top" id="label_11" for="input_11">
-              Second Pictures of a Products Sold:
-              <span class="form-required">
-                *
-              </span>
-            </label>
-            <div id="cid_11" class="form-input-wide jf-required">
-              <input type="file" id="input_11" name="q11_uploadYour11" class="form-upload validate[required]" data-file-accept="pdf, doc, docx, xls, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-file-maxsize="10240" data-file-minsize="0" data-file-limit="0" data-component="fileupload" required="" />
-            </div>
-          </li>
-
-          <li class="form-line form-line-column form-col-4 jf-required" data-type="control_fileupload" id="id_11">
-            
-            <label class="form-label form-label-top" id="label_11" for="input_11">
-              Third Pictures of a Products Sold:
-              <span class="form-required">
-                *
-              </span>
-            </label>
-            <div id="cid_11" class="form-input-wide jf-required">
-              <input type="file" id="input_11" name="q11_uploadYour11" class="form-upload validate[required]" data-file-accept="pdf, doc, docx, xls, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-file-maxsize="10240" data-file-minsize="0" data-file-limit="0" data-component="fileupload" required="" />
-            </div>
-          </li>
-
-          <li class="form-line form-line-column form-col-4 jf-required" data-type="control_fileupload" id="id_11">
-            
-            <label class="form-label form-label-top" id="label_11" for="input_11">
-              Tax Card:
-              <span class="form-required">
-                *
-              </span>
-            </label>
-            <div id="cid_11" class="form-input-wide jf-required">
-              <input type="file" id="input_11" name="q11_uploadYour11" class="form-upload validate[required]" data-file-accept="pdf, doc, docx, xls, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-file-maxsize="10240" data-file-minsize="0" data-file-limit="0" data-component="fileupload" required="" />
-            </div>
-          </li>
-          
-          <class="form-line" data-type="control_button" id="id_20">
-            <div id="cid_20" class="form-input-wide">
-              <div style="margin-left:156px" data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
-                <button id="input_20" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
-                  Submit
-                </button>
+    <body class="u-body u-xl-mode">
+    <section class="u-align-center u-clearfix u-grey-5 u-section-1" id="carousel_f5df">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-8 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout" style="">
+            <div class="u-layout-row" style="">
+              <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1" data-href="https://nicepage.com">
+                <div class="u-container-layout u-valign-top-lg u-container-layout-1">
+                  <h1 class="u-align-left u-text u-text-default u-title u-text-1">Booking Form</h1>
+                  <a href="#" class="u-btn u-button-style u-grey-90 u-btn-1">Choose Photo</a>
+                  <div class="u-form u-form-1">
+                    <form action="#" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0px;" source="email" name="form">
+                      <div class="u-form-email u-form-group u-form-group-1">
+                        <label for="email-f2a8" class="u-label u-text-custom-color-1 u-label-1">Brand Name</label>
+                        <input type="email" placeholder="Enter a brand name" id="email-f2a8" name="text" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
+                      </div>
+                      <div class="u-form-group u-form-name u-form-group-2">
+                        <label for="name-f2a8" class="u-label u-text-custom-color-1 u-label-2">Instagram Link</label>
+                        <input type="text" placeholder="www.example.com" id="name-f2a8" name="link" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
+                      </div>
+                      <div class="u-form-group u-form-message u-form-group-3">
+                        <label for="message-f2a8" class="u-label u-text-custom-color-1 u-label-3">Purpose</label>
+                        <textarea placeholder="Enter your message" rows="4" cols="50" id="message-f2a8" name="message" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required=""></textarea>
+                      </div>
+                      <div class="u-form-group u-form-textarea u-form-group-4">
+                        <label for="textarea-6993" class="u-label u-text-custom-color-1 u-label-4">Brand Logo</label>
+                        <textarea rows="4" cols="50" id="textarea-6993" name="textarea" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required=""></textarea>
+                      </div>
+                      <div class="u-form-group u-form-textarea u-form-group-5">
+                        <label for="textarea-40bb" class="u-label u-text-custom-color-1 u-label-5">First Picture of a Product Sold</label>
+                        <textarea rows="4" cols="50" id="textarea-40bb" name="textarea-1" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required=""></textarea>
+                      </div>
+                      <div class="u-form-group u-form-textarea u-form-group-6">
+                        <label for="textarea-0696" class="u-label u-text-custom-color-1 u-label-6">Second Picture of a Product Sold</label>
+                        <textarea rows="4" cols="50" id="textarea-0696" name="textarea-2" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required=""></textarea>
+                      </div>
+                      <div class="u-form-group u-form-textarea u-form-group-7">
+                        <label for="textarea-6e5a" class="u-label u-text-custom-color-1 u-label-7">Third Picture of a Product Sold</label>
+                        <textarea rows="4" cols="50" id="textarea-6e5a" name="textarea-3" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required=""></textarea>
+                      </div>
+                      <div class="u-form-group u-form-textarea u-form-group-8">
+                        <label for="textarea-b53b" class="u-label u-text-custom-color-1 u-label-8">Tax Card</label>
+                        <textarea rows="4" cols="50" id="textarea-b53b" name="textarea-4" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="" autofocus="autofocus"></textarea>
+                      </div>
+                      <div class="u-align-center u-form-group u-form-submit u-form-group-9">
+                        <a href="#" class="u-black u-border-none u-btn u-btn-submit u-button-style u-btn-2">Submit<br>
+                        </a>
+                        <input type="submit" value="submit" class="u-form-control-hidden">
+                      </div>
+                      <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                      <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                      <input type="hidden" value="" name="recaptchaResponse">
+                    </form>
+                  </div>
+                  <a href="#" class="u-btn u-button-style u-grey-90 u-btn-3">Choose Photo</a>
+                  <a href="#" class="u-btn u-button-style u-grey-90 u-btn-4">Choose Photo<br>
+                  </a>
+                  <a href="#" class="u-btn u-button-style u-grey-90 u-btn-5">Choose Photo<br>
+                  </a>
+                  <a href="#" class="u-btn u-button-style u-grey-90 u-btn-6">Choose Photo<br>
+                  </a>
+                </div>
               </div>
             </div>
-          
-        </ul>
+          </div>
+        </div>
       </div>
-      
-      <script type="text/javascript">
-      var all_spc = document.querySelectorAll("form[id='220918800780557'] .si" + "mple" + "_spc");
-    for (var i = 0; i < all_spc.length; i++)
-    {
-      all_spc[i].value = "220918800780557-220918800780557";
-    }
-      </script>
-      
-      </form>
+    </section>
+    
+    
+    
+    <section class="u-backlink u-clearfix u-grey-80">
+      </a>
+      <p class="u-text">
+      </p>
+      <a class="u-link" href="" target="_blank">
+      </a>
+    </section>
+  </body>
    
 EOT;
     echo $text;
