@@ -31,7 +31,15 @@
 <?php
 class Booking extends view
 {
-
+public function getfields(){
+  if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    if(isset($_POST['email'])){
+      $email = $_POST['email'];
+      $link = $_POST['link'];
+      $purpose = $_POST['purpose'];
+    }
+  }
+}
   public function output()
   {
     require APPROOT . '/views/inc/header.php';
@@ -43,15 +51,15 @@ class Booking extends view
         <div class="u-clearfix u-expanded-width u-gutter-8 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout" style="">
             <div class="u-layout-row" style="">
-              <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1" data-href="https://nicepage.com">
+              <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1" >
                 <div class="u-container-layout u-valign-top-lg u-container-layout-1">
                   <h1 class="u-align-left u-text u-text-default u-title u-text-1">Booking Form</h1>
-                  <a href="#" class="u-btn u-button-style u-grey-90 u-btn-1">Choose Photo</a>
+                  <a href="#" style="background:transparent;" class="u-btn u-button-style u-grey-90 u-btn-1"></a>
                   <div class="u-form u-form-1">
                     <form action="#" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0px;" source="email" name="form">
                       <div class="u-form-email u-form-group u-form-group-1">
                         <label for="email-f2a8" class="u-label u-text-custom-color-1 u-label-1">Brand Name</label>
-                        <input type="email" placeholder="Enter a brand name" id="email-f2a8" name="text" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
+                        <input type="email" placeholder="Enter a brand name" id="email-f2a8" name="email" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
                       </div>
                       <div class="u-form-group u-form-name u-form-group-2">
                         <label for="name-f2a8" class="u-label u-text-custom-color-1 u-label-2">Instagram Link</label>
@@ -59,28 +67,38 @@ class Booking extends view
                       </div>
                       <div class="u-form-group u-form-message u-form-group-3">
                         <label for="message-f2a8" class="u-label u-text-custom-color-1 u-label-3">Purpose</label>
-                        <textarea placeholder="Enter your message" rows="4" cols="50" id="message-f2a8" name="message" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required=""></textarea>
+                        <textarea placeholder="Enter your message" name="purpose" rows="4" cols="50" id="message-f2a8" name="message" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required=""></textarea>
                       </div>
-                      <div class="u-form-group u-form-textarea u-form-group-4">
+                      <div class="u-form-group form-group u-form-textarea u-form-group-4">
                         <label for="textarea-6993" class="u-label u-text-custom-color-1 u-label-4">Brand Logo</label>
-                        <textarea rows="4" cols="50" id="textarea-6993" name="textarea" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required=""></textarea>
+                        <input type="file"
+                        name="brand_logo"
+                        accept="image/png, image/jpeg">
                       </div>
                       <div class="u-form-group u-form-textarea u-form-group-5">
                         <label for="textarea-40bb" class="u-label u-text-custom-color-1 u-label-5">First Picture of a Product Sold</label>
-                        <textarea rows="4" cols="50" id="textarea-40bb" name="textarea-1" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required=""></textarea>
+                        <input type="file"
+                        name="product_img"
+                        accept="image/png, image/jpeg">
                       </div>
                       <div class="u-form-group u-form-textarea u-form-group-6">
                         <label for="textarea-0696" class="u-label u-text-custom-color-1 u-label-6">Second Picture of a Product Sold</label>
-                        <textarea rows="4" cols="50" id="textarea-0696" name="textarea-2" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required=""></textarea>
-                      </div>
+                        <input type="file"
+                        name="product_img_2"
+                        accept="image/png, image/jpeg">
+                        </div>
                       <div class="u-form-group u-form-textarea u-form-group-7">
                         <label for="textarea-6e5a" class="u-label u-text-custom-color-1 u-label-7">Third Picture of a Product Sold</label>
-                        <textarea rows="4" cols="50" id="textarea-6e5a" name="textarea-3" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required=""></textarea>
-                      </div>
+                        <input type="file"
+                        name="product_img_3"
+                        accept="image/png, image/jpeg">
+                        </div>
                       <div class="u-form-group u-form-textarea u-form-group-8">
                         <label for="textarea-b53b" class="u-label u-text-custom-color-1 u-label-8">Tax Card</label>
-                        <textarea rows="4" cols="50" id="textarea-b53b" name="textarea-4" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="" autofocus="autofocus"></textarea>
-                      </div>
+                        <input type="file"
+                        name="product_img_4"
+                        accept="image/png, image/jpeg">
+                        </div>
                       <div class="u-align-center u-form-group u-form-submit u-form-group-9">
                         <a href="#" class="u-black u-border-none u-btn u-btn-submit u-button-style u-btn-2">Submit<br>
                         </a>
@@ -91,13 +109,7 @@ class Booking extends view
                       <input type="hidden" value="" name="recaptchaResponse">
                     </form>
                   </div>
-                  <a href="#" class="u-btn u-button-style u-grey-90 u-btn-3">Choose Photo</a>
-                  <a href="#" class="u-btn u-button-style u-grey-90 u-btn-4">Choose Photo<br>
-                  </a>
-                  <a href="#" class="u-btn u-button-style u-grey-90 u-btn-5">Choose Photo<br>
-                  </a>
-                  <a href="#" class="u-btn u-button-style u-grey-90 u-btn-6">Choose Photo<br>
-                  </a>
+                  
                 </div>
               </div>
             </div>
