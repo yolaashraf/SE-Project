@@ -14,7 +14,7 @@ class BookingModel extends model
      ##   return $this->dbh->execute();
     ##}
    # public function insertBooking(){
-     #   $query = "INSERT INTO "
-    #}
+     ##   $query = "INSERT INTO "
+    #} 
      
 }
