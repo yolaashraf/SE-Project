@@ -13,8 +13,8 @@ class BookingModel extends model
        ## $this->dbh->bind(':pass', $this->password);
      ##   return $this->dbh->execute();
     ##}
-    public function insertBooking(){
-        $query = "INSERT INTO "
-    }
+   # public function insertBooking(){
+     #   $query = "INSERT INTO "
+    #}
      
 }
