@@ -1,3 +1,11 @@
+<script>
+  function search_btn_Clicked(){
+    console.log("IAM HERE");
+    var variable = document.getElementById('input_search_bar').value;
+    console.log(variable);
+    window.location.replace('http://localhost/SE-Project/public/pages/'+variable);
+  }
+  </script>
 <nav class="navbar navbar-expand-lg navbar-dark mb-4" style= "background-color:#ababab">
   <div class="container-fluid">
     <a class="navbar-brand" href="<?php echo URLROOT . 'index'; ?>">
@@ -46,10 +54,10 @@
         </li>
 
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+    
+        <input class="form-control me-2" id="input_search_bar" type="search" placeholder="Search" aria-label="Search">
+        <button onclick="search_btn_Clicked()" class="btn btn-outline-success" >Search</button>
+
     </div>
   </div>
 </nav>

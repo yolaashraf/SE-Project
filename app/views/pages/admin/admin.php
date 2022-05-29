@@ -8,29 +8,29 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="<?php echo URLROOT?>plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- iCheck -->
-  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo URLROOT?>plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../../../public/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?php echo URLROOT?>/css/adminlte.min.css">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="<?php echo URLROOT?>plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- summernote -->
-  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <link rel="stylesheet" href="<?php echo URLROOT?>plugins/summernote/summernote-bs4.min.css">
 </head>
 
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+<script src="<?php echo URLROOT?>plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="<?php echo URLROOT?>plugins/jquery-ui/jquery-ui.min.js"></script>
 
 <!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?php echo URLROOT?>plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- daterangepicker -->
-<script src="plugins/moment/moment.min.js"></script>
+<script src="<?php echo URLROOT?>plugins/moment/moment.min.js"></script>
 <script src="plugins/daterangepicker/daterangepicker.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
 <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
@@ -58,7 +58,7 @@ class Admin extends view
     $title = $this->model->title;
     $data = $this->model->data;
 
-    $text = <<<EOT
+    $text = '
     
 
   <body class="hold-transition sidebar-mini layout-fixed">
@@ -205,134 +205,9 @@ class Admin extends view
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="admin.php" class="brand-link">
-      <img src="../../../images/setat.png" alt="Admin Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Admin Panel</span>
-    </a>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="../../../public/img/AdminLTELogo.png" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">Mofida Shiha</a>
-        </div>
-      </div>
-
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-
-          <li class="nav-item">
-            <a href="admin.php" class="nav-link active">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Dashboard
-              </p>
-            </a>
-          </li>
-         
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-envelope"></i>
-              <p>
-                Mailbox
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="mailbox.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inbox</p>
-                </a>
-              </li>
-              <li class="nav-item">
-
-              <li class="nav-item">
-                <a href="compose.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Compose</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-file"></i>
-              <p>
-                Forms
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href=" " class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Pending Forms</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href=" " class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Accepted Forms</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href=" " class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Rejected Forms</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
-              <p>
-                Pages
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Home</p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href=" " class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Contact us</p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href=" " class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>About us</p>
-                </a>
-              </li>
-
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
+ ';
+     require APPROOT . '/views/pages/admin/inc/navbar.php';
+     $text .='
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -439,7 +314,7 @@ class Admin extends view
                     <img class="direct-chat-img" src="../../../public/img/user1-128x128.jpg" alt="message user image">
                     <!-- /.direct-chat-img -->
                     <div class="direct-chat-text">
-                      Is this template really for free? That's unbelievable!
+                      Is this template really for free? Thats unbelievable!
                     </div>
                     <!-- /.direct-chat-text -->
                   </div>
@@ -538,7 +413,7 @@ class Admin extends view
                             Nadia Jolie
                             <small class="contacts-list-date float-right">2/20/2015</small>
                           </span>
-                          <span class="contacts-list-msg">I'll call you back at...</span>
+                          <span class="contacts-list-msg">Ill call you back at...</span>
                         </div>
                         <!-- /.contacts-list-info -->
                       </a>
@@ -641,7 +516,7 @@ class Admin extends view
 
 
 
-EOT;
+';
     echo $text;
     require APPROOT . '/views/inc/footer.php';
   }
