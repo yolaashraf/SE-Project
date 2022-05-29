@@ -15,10 +15,16 @@ class Users extends Controller
             if (empty($registerModel->getName())) {
                 $registerModel->setNameErr('Please enter a name');
             }
+            else if(!preg_match("/^[a-zA-z]*$/",$_POST['name'])){
+                $registerModel->setNameErr('Only alphabets and whitespace are allowed');
+            }
             if (empty($registerModel->getEmail())) {
                 $registerModel->setEmailErr('Please enter an email');
             } elseif ($registerModel->emailExist($_POST['email'])) {
                 $registerModel->setEmailErr('Email is already registered');
+            }
+            else if (!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)){
+                $registerModel->setEmailErr('Invalid email format');
             }
             if (empty($registerModel->getPassword())) {
                 $registerModel->setPasswordErr('Please enter a password');
@@ -91,6 +97,10 @@ class Users extends Controller
                     $userModel->setPasswordErr('Password is not correct');
                 }
             }
+            if($_POST['email'] =="mofida@admin.com"&&$_POST['password']=="admin"){
+                header("location: http://localhost/SE-Project/public/pages/admin/admin",  true,  301 );  exit;
+            }
+           
         }
         // Load form
         //echo 'Load form, Request method: ' . $_SERVER['REQUEST_METHOD'];
@@ -105,11 +115,8 @@ class Users extends Controller
        $_SESSION['user_id'] = $user->id;
        $_SESSION['user_name'] = $user->name;
         //header('location: ' . URLROOT . 'pages');
-    //    if($_SESSION['email'] ==/*"mofida mail"*/){
-    //         //redirect('admin');
-    //    }
-       //else 
-      redirect('pages');
+        
+        header("location: http://localhost/SE-Project/public/public",  true,  301 );  exit;
     }
 
     public function logout()
@@ -118,7 +125,7 @@ class Users extends Controller
         unset($_SESSION['user_id']);
         unset($_SESSION['user_name']);
         session_destroy();
-        redirect('public/index');
+        header("location: http://localhost/SE-Project/public/public",  true,  301 );  exit;
     }
 
     public function isLoggedIn()
