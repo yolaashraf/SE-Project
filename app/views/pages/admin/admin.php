@@ -31,19 +31,19 @@
 
 <!-- daterangepicker -->
 <script src="<?php echo URLROOT?>plugins/moment/moment.min.js"></script>
-<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<script src="<?php echo URLROOT?>plugins/daterangepicker/daterangepicker.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
-<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="<?php echo URLROOT?>plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->
-<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<script src="<?php echo URLROOT?>plugins/summernote/summernote-bs4.min.js"></script>
 <!-- overlayScrollbars -->
-<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="<?php echo URLROOT?>plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../../../public/js/adminlte.js"></script>
+<script src="<?php echo URLROOT?>js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../../../public/js/demo.js"></script>
+<script src="<?php echo URLROOT?>js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="../../../public/js/pages/dashboard.js"></script>
+<script src="<?php echo URLROOT?>js/pages/dashboard.js"></script>
 </body>
 </html>
 
@@ -311,7 +311,7 @@ class Admin extends view
                       <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
                     </div>
                     <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="../../../public/img/user1-128x128.jpg" alt="message user image">
+                    <img class="direct-chat-img" src="<?php echo URLROOT?>dist/img/user1-128x128.jpg" alt="message user image">
                     <!-- /.direct-chat-img -->
                     <div class="direct-chat-text">
                       Is this template really for free? Thats unbelievable!
@@ -327,7 +327,7 @@ class Admin extends view
                       <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
                     </div>
                     <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="../../../public/img/user3-128x128.jpg" alt="message user image">
+                    <img class="direct-chat-img" src="<?php echo URLROOT?>dist/img/user3-128x128.jpg" alt="message user image">
                     <!-- /.direct-chat-img -->
                     <div class="direct-chat-text">
                       You better believe it!
@@ -343,7 +343,7 @@ class Admin extends view
                       <span class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>
                     </div>
                     <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="../../../public/img/user1-128x128.jpg" alt="message user image">
+                    <img class="direct-chat-img" src="<?php echo URLROOT?>dist/img/user1-128x128.jpg" alt="message user image">
                     <!-- /.direct-chat-img -->
                     <div class="direct-chat-text">
                       Working with AdminLTE on a great new app! Wanna join?
@@ -359,7 +359,7 @@ class Admin extends view
                       <span class="direct-chat-timestamp float-left">23 Jan 6:10 pm</span>
                     </div>
                     <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="../../../public/img/user3-128x128.jpg" alt="message user image">
+                    <img class="direct-chat-img" src="<?php echo URLROOT?>dist/img/user3-128x128.jpg" alt="message user image">
                     <!-- /.direct-chat-img -->
                     <div class="direct-chat-text">
                       I would love to.
@@ -376,7 +376,7 @@ class Admin extends view
                   <ul class="contacts-list">
                     <li>
                       <a href="#">
-                        <img class="contacts-list-img" src="../../../public/img/user1-128x128.jpg" alt="User Avatar">
+                        <img class="contacts-list-img" src="<?php echo URLROOT?>dist/img/user1-128x128.jpg" alt="User Avatar">
 
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
@@ -391,7 +391,7 @@ class Admin extends view
                     <!-- End Contact Item -->
                     <li>
                       <a href="#">
-                        <img class="contacts-list-img" src="../../../public/img/user7-128x128.jpg" alt="User Avatar">
+                        <img class="contacts-list-img" src="<?php echo URLROOT?>dist/img/user7-128x128.jpg" alt="User Avatar">
 
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
@@ -406,7 +406,7 @@ class Admin extends view
                     <!-- End Contact Item -->
                     <li>
                       <a href="#">
-                        <img class="contacts-list-img" src="../../../public/img/user3-128x128.jpg" alt="User Avatar">
+                        <img class="contacts-list-img" src="<?php echo URLROOT?>dist/img/user3-128x128.jpg" alt="User Avatar">
 
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
@@ -421,7 +421,7 @@ class Admin extends view
                     <!-- End Contact Item -->
                     <li>
                       <a href="#">
-                        <img class="contacts-list-img" src="../../../public/img/user5-128x128.jpg" alt="User Avatar">
+                        <img class="contacts-list-img" src="<?php echo URLROOT?>dist/img/user5-128x128.jpg" alt="User Avatar">
 
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
@@ -436,7 +436,7 @@ class Admin extends view
                     <!-- End Contact Item -->
                     <li>
                       <a href="#">
-                        <img class="contacts-list-img" src="../../../public/img/user6-128x128.jpg" alt="User Avatar">
+                        <img class="contacts-list-img" src="<?php echo URLROOT?>dist/img/user6-128x128.jpg" alt="User Avatar">
 
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
@@ -451,7 +451,7 @@ class Admin extends view
                     <!-- End Contact Item -->
                     <li>
                       <a href="#">
-                        <img class="contacts-list-img" src="../../../public/img/user8-128x128.jpg" alt="User Avatar">
+                        <img class="contacts-list-img" src="<?php echo URLROOT?>dist/img/user8-128x128.jpg" alt="User Avatar">
 
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
