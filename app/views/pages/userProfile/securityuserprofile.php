@@ -25,7 +25,6 @@ class securityuserprofile extends View
         <!-- Account page navigation-->
         <nav class="nav nav-borders">
         <a class="nav-link  ms-0" href="userprofile.php" style="color:#d40159" >Profile</a>
-        <a class="nav-link" href="billinginfo.php" style= "color:#d40159" >Billing</a>
         </nav>
 
         <hr class="mt-0 mb-4">
@@ -80,16 +79,6 @@ class securityuserprofile extends View
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-
-                <!-- Delete account-->
-                <div class="card mb-4">
-                    <div class="card-header">Delete Account</div>
-                    <div class="card-body">
-                        <p>Deleting your account is a permanent action and cannot be undone. If you are sure you want to delete your account, select the button below.</p>
-                        <button class="btn btn-danger-soft text-danger" type="button">I understand, delete my account</button>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

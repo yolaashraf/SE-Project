@@ -112,8 +112,9 @@ class Users extends Controller
 
     public function createUserSession($user)
     {
-       $_SESSION['user_id'] = $user->id;
+       $_SESSION['user_id'] = $user->ID;
        $_SESSION['user_name'] = $user->name;
+       $_SESSION['user_email']= $user->email;
         //header('location: ' . URLROOT . 'pages');
         
         header("location: http://localhost/SE-Project/public/public",  true,  301 );  exit;
@@ -130,6 +131,25 @@ class Users extends Controller
 
     public function isLoggedIn()
     {
-        return isset($_SESSION['user_id']);
+        return isset($_SESSION['user_id']); 
     }
+
+    public function userprofile()
+    {
+        $UserProfileModel=$this->getModel();
+
+         if($_SERVER['REQUEST_METHOD'] == 'POST')
+         {
+
+            $UserProfileModel->updateProfile($_POST['Name'],$_POST['Email']);
+
+            $viewPath = VIEWS_PATH . 'userProfile/userprofile.php';
+            require_once $viewPath;
+            $view = new UserProfileModel($this->getModel(), $this);
+            $view->output();
+         }
+                
+    
+    }
+
 }

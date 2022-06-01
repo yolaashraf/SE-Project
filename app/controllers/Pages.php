@@ -54,6 +54,13 @@ class Pages extends Controller
         $userprofileView = new userprofile($this->getModel(), $this);
         $userprofileView->output();
     }
+    public function securityUserProfile()
+    {
+        $viewPath = VIEWS_PATH . 'pages/userProfile/securityuserprofile.php';
+        require_once $viewPath;
+        $userprofileView = new securityuserprofile($this->getModel(), $this);
+        $userprofileView->output();
+    }
     
     public function Booking()
     {
