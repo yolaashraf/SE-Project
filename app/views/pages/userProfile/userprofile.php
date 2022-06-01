@@ -65,12 +65,12 @@ class userprofile extends View
                 <div class="card-header">Account Details</div>
                 <div class="card-body">
                     
-                    <form method="POST" action='$action' >
+                    <form method="POST" action='http://localhost/SE-Project/public/users/userprofile' >
                        
                     <!--username-->
                         <div class="mb-3">
                             <label class="small mb-1" for="inputUsername">Username (how your name will appear to other users on the site)</label>
-                            <input class="form-control" id="inputUsername" type="text" placeholder="$name" required>
+                            <input class="form-control" id="inputUsername" type="text" name="Name" placeholder="$name" required>
                         </div>
                         
                         <!-- Form Row separator-->
