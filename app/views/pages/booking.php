@@ -31,18 +31,12 @@
 <?php
 class Booking extends view
 {
-public function getfields(){
-  if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    if(isset($_POST['email'])){
-      $email = $_POST['email'];
-      $link = $_POST['link'];
-      $purpose = $_POST['purpose'];
-    }
-  }
-}
+
   public function output()
   {
+    
     require APPROOT . '/views/inc/header.php';
+    $this->getfields();
     $text = <<<EOT
 
     <body class="u-body u-xl-mode">
@@ -56,10 +50,10 @@ public function getfields(){
                   <h1 class="u-align-left u-text u-text-default u-title u-text-1">Booking Form</h1>
                   <a href="#" style="background:transparent;" class="u-btn u-button-style u-grey-90 u-btn-1"></a>
                   <div class="u-form u-form-1">
-                    <form action="#" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0px;" source="email" name="form">
+                    <form action="#" method="POST" enctype="multioart/form-data" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0px;"  name="form">
                       <div class="u-form-email u-form-group u-form-group-1">
                         <label for="email-f2a8" class="u-label u-text-custom-color-1 u-label-1">Brand Name</label>
-                        <input type="email" placeholder="Enter a brand name" id="email-f2a8" name="email" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
+                        <input type="email" placeholder="Enter a brand name" id="email-f2a8" name="Brand_name" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
                       </div>
                       <div class="u-form-group u-form-name u-form-group-2">
                         <label for="name-f2a8" class="u-label u-text-custom-color-1 u-label-2">Instagram Link</label>
@@ -67,13 +61,11 @@ public function getfields(){
                       </div>
                       <div class="u-form-group u-form-message u-form-group-3">
                         <label for="message-f2a8" class="u-label u-text-custom-color-1 u-label-3">Purpose</label>
-                        <textarea placeholder="Enter your message" name="purpose" rows="4" cols="50" id="message-f2a8" name="message" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required=""></textarea>
+                        <textarea placeholder="Enter your message" name="purpose" rows="4" cols="50" id="message-f2a8" name="purpose" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required=""></textarea>
                       </div>
                       <div class="u-form-group form-group u-form-textarea u-form-group-4">
                         <label for="textarea-6993" class="u-label u-text-custom-color-1 u-label-4">Brand Logo</label>
-                        <input type="file"
-                        name="brand_logo"
-                        accept="image/png, image/jpeg">
+                        <input type="file"name="brand_logo">
                       </div>
                       <div class="u-form-group u-form-textarea u-form-group-5">
                         <label for="textarea-40bb" class="u-label u-text-custom-color-1 u-label-5">First Picture of a Product Sold</label>
@@ -100,9 +92,7 @@ public function getfields(){
                         accept="image/png, image/jpeg">
                         </div>
                       <div class="u-align-center u-form-group u-form-submit u-form-group-9">
-                        <a href="#" class="u-black u-border-none u-btn u-btn-submit u-button-style u-btn-2">Submit<br>
-                        </a>
-                        <input type="submit" value="submit" class="u-form-control-hidden">
+                        <input type="submit" value="submit" class="u-form-submit">
                       </div>
                       <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
                       <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
@@ -133,4 +123,12 @@ EOT;
     echo $text;
     require APPROOT . '/views/inc/footer.php';
   }
+  public function getfields(){
+     if($_SERVER['REQUEST_METHOD'] == 'POST'){
+         $this->model->insertBooking($_POST);
+         print_r($_POST['brand_logo']);
+       
+     }
+   }
 }
+
