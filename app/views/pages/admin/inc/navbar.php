@@ -55,7 +55,7 @@
               <li class="nav-item">
 
               <li class="nav-item">
-                <a href="pages/mailbox/compose.html" class="nav-link">
+                <a href="/SE-Project/public/pages/mailbox" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Compose</p>
                 </a>

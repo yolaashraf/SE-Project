@@ -59,7 +59,7 @@
 </html>
 
 <?php
-class Admin extends view
+class mailbox extends view
 {
 
   public function output()
