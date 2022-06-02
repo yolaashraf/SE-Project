@@ -26,7 +26,7 @@
 </html>
 
 <?php
-class compose extends view
+class pending extends view
 {
 
   public function output()

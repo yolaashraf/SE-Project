@@ -71,4 +71,28 @@ class Pages extends Controller
         $bookingView->output();
     }
 
+    public function Pending()
+    {
+        $viewPath = VIEWS_PATH . 'pages/admin/pending.php';
+        require_once $viewPath;
+        $pendingView = new pending($this->getModel(), $this);
+        $pendingView->output();
+    }
+
+    public function Accepted()
+    {
+        $viewPath = VIEWS_PATH . 'pages/admin/accepted.php';
+        require_once $viewPath;
+        $acceptedView = new accepted($this->getModel(), $this);
+        $acceptedView->output();
+    }
+
+    public function Rejected()
+    {
+        $viewPath = VIEWS_PATH . 'pages/admin/rejected.php';
+        require_once $viewPath;
+        $rejectedView = new rejected($this->getModel(), $this);
+        $rejectedView->output();
+    }
+
 }

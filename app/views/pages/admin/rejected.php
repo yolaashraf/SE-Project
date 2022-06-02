@@ -21,12 +21,12 @@
   <link rel="stylesheet" href="<?php echo URLROOT?>plugins/summernote/summernote-bs4.min.css">
 </head>
 
-
+>
 </body>
 </html>
 
 <?php
-class compose extends view
+class rejected extends view
 {
 
   public function output()

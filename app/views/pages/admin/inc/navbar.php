@@ -72,19 +72,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href=" " class="nav-link">
+                <a href="/SE-Project/public/pages/pending" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Pending Forms</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=" " class="nav-link">
+                <a href="/SE-Project/public/pages/accepted" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Accepted Forms</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href=" " class="nav-link">
+                <a href="/SE-Project/public/pages/rejected" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Rejected Forms</p>
                 </a>
