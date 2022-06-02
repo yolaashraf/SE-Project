@@ -51,13 +51,15 @@ class Booking extends view
                   <a href="#" style="background:transparent;" class="u-btn u-button-style u-grey-90 u-btn-1"></a>
                   <div class="u-form u-form-1">
                     <form action="#" method="POST" enctype="multioart/form-data" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 0px;"  name="form">
-                      <div class="u-form-email u-form-group u-form-group-1">
-                        <label for="email-f2a8" class="u-label u-text-custom-color-1 u-label-1">Brand Name</label>
-                        <input type="email" placeholder="Enter a brand name" id="email-f2a8" name="Brand_name" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
+                      
+
+                      <div class="u-form-group u-form-name u-form-group-1">
+                        <label for="name-f2a8" class="u-label u-text-custom-color-1 u-label-1">Brand Name</label>
+                        <input type="link" placeholder="Enter a brand name" id="name-f2a8" name="Brand_name" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="Enter Brand Name">
                       </div>
-                      <div class="u-form-group u-form-name u-form-group-2">
-                        <label for="name-f2a8" class="u-label u-text-custom-color-1 u-label-2">Instagram Link</label>
-                        <input type="text" placeholder="www.example.com" id="name-f2a8" name="link" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
+                      <div class="u-form-email u-form-group u-form-group-2">
+                        <label for="email-f2a8" class="u-label u-text-custom-color-1 u-label-2">Instagram Link</label>
+                        <input type="text" placeholder="www.example.com" id="name-f2a8" name="link" class="u-border-2 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="Enter Brand Instagram Profile Link">
                       </div>
                       <div class="u-form-group u-form-message u-form-group-3">
                         <label for="message-f2a8" class="u-label u-text-custom-color-1 u-label-3">Purpose</label>

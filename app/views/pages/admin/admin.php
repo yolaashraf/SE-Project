@@ -21,29 +21,7 @@
   <link rel="stylesheet" href="<?php echo URLROOT?>plugins/summernote/summernote-bs4.min.css">
 </head>
 
-<!-- jQuery -->
-<script src="<?php echo URLROOT?>plugins/jquery/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="<?php echo URLROOT?>plugins/jquery-ui/jquery-ui.min.js"></script>
 
-<!-- Bootstrap 4 -->
-<script src="<?php echo URLROOT?>plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- daterangepicker -->
-<script src="<?php echo URLROOT?>plugins/moment/moment.min.js"></script>
-<script src="<?php echo URLROOT?>plugins/daterangepicker/daterangepicker.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="<?php echo URLROOT?>plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- Summernote -->
-<script src="<?php echo URLROOT?>plugins/summernote/summernote-bs4.min.js"></script>
-<!-- overlayScrollbars -->
-<script src="<?php echo URLROOT?>plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-<!-- AdminLTE App -->
-<script src="<?php echo URLROOT?>js/adminlte.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="<?php echo URLROOT?>js/demo.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="<?php echo URLROOT?>js/pages/dashboard.js"></script>
 </body>
 </html>
 
@@ -74,7 +52,7 @@ class Admin extends view
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="admin.php" class="nav-link">Home</a>
+        <a href="/SE-Project/public/pages/admin" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -115,7 +93,7 @@ class Admin extends view
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="../../../public/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <img src="../../public/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Brad Diesel
@@ -131,7 +109,7 @@ class Admin extends view
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="../../../public/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="../../public/dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   John Pierce
@@ -147,7 +125,7 @@ class Admin extends view
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="../../../public/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="../../public/dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Nora Silvester
@@ -195,11 +173,7 @@ class Admin extends view
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
-          <i class="fas fa-th-large"></i>
-        </a>
-      </li>
+      
     </ul>
   </nav>
   <!-- /.navbar -->
@@ -311,7 +285,7 @@ class Admin extends view
                       <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
                     </div>
                     <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="<?php echo URLROOT?>dist/img/user1-128x128.jpg" alt="message user image">
+                    <img class="direct-chat-img" src="../../public/dist/img/user1-128x128.jpg" alt="message user image">
                     <!-- /.direct-chat-img -->
                     <div class="direct-chat-text">
                       Is this template really for free? Thats unbelievable!
@@ -327,7 +301,7 @@ class Admin extends view
                       <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
                     </div>
                     <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="<?php echo URLROOT?>dist/img/user3-128x128.jpg" alt="message user image">
+                    <img class="direct-chat-img" src="../../public/dist/img/user3-128x128.jpg" alt="message user image">
                     <!-- /.direct-chat-img -->
                     <div class="direct-chat-text">
                       You better believe it!
@@ -343,7 +317,7 @@ class Admin extends view
                       <span class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>
                     </div>
                     <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="<?php echo URLROOT?>dist/img/user1-128x128.jpg" alt="message user image">
+                    <img class="direct-chat-img" src="../../public/dist/img/user1-128x128.jpg" alt="message user image">
                     <!-- /.direct-chat-img -->
                     <div class="direct-chat-text">
                       Working with AdminLTE on a great new app! Wanna join?
@@ -359,7 +333,7 @@ class Admin extends view
                       <span class="direct-chat-timestamp float-left">23 Jan 6:10 pm</span>
                     </div>
                     <!-- /.direct-chat-infos -->
-                    <img class="direct-chat-img" src="<?php echo URLROOT?>dist/img/user3-128x128.jpg" alt="message user image">
+                    <img class="direct-chat-img" src="../../public/dist/img/user3-128x128.jpg" alt="message user image">
                     <!-- /.direct-chat-img -->
                     <div class="direct-chat-text">
                       I would love to.
@@ -376,7 +350,7 @@ class Admin extends view
                   <ul class="contacts-list">
                     <li>
                       <a href="#">
-                        <img class="contacts-list-img" src="<?php echo URLROOT?>dist/img/user1-128x128.jpg" alt="User Avatar">
+                        <img class="contacts-list-img" src="../../public/dist/img/user1-128x128.jpg" alt="User Avatar">
 
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
@@ -391,7 +365,7 @@ class Admin extends view
                     <!-- End Contact Item -->
                     <li>
                       <a href="#">
-                        <img class="contacts-list-img" src="<?php echo URLROOT?>dist/img/user7-128x128.jpg" alt="User Avatar">
+                        <img class="contacts-list-img" src="../../public/dist/img/user7-128x128.jpg" alt="User Avatar">
 
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
@@ -406,7 +380,7 @@ class Admin extends view
                     <!-- End Contact Item -->
                     <li>
                       <a href="#">
-                        <img class="contacts-list-img" src="<?php echo URLROOT?>dist/img/user3-128x128.jpg" alt="User Avatar">
+                        <img class="contacts-list-img" src="../../public/dist/img/user3-128x128.jpg" alt="User Avatar">
 
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
@@ -421,7 +395,7 @@ class Admin extends view
                     <!-- End Contact Item -->
                     <li>
                       <a href="#">
-                        <img class="contacts-list-img" src="<?php echo URLROOT?>dist/img/user5-128x128.jpg" alt="User Avatar">
+                        <img class="contacts-list-img" src="../../public/dist/img/user5-128x128.jpg" alt="User Avatar">
 
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
@@ -436,7 +410,7 @@ class Admin extends view
                     <!-- End Contact Item -->
                     <li>
                       <a href="#">
-                        <img class="contacts-list-img" src="<?php echo URLROOT?>dist/img/user6-128x128.jpg" alt="User Avatar">
+                        <img class="contacts-list-img" src="../../public/dist/img/user6-128x128.jpg" alt="User Avatar">
 
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
@@ -451,7 +425,7 @@ class Admin extends view
                     <!-- End Contact Item -->
                     <li>
                       <a href="#">
-                        <img class="contacts-list-img" src="<?php echo URLROOT?>dist/img/user8-128x128.jpg" alt="User Avatar">
+                        <img class="contacts-list-img" src="../../public/dist/img/user8-128x128.jpg" alt="User Avatar">
 
                         <div class="contacts-list-info">
                           <span class="contacts-list-name">
@@ -494,14 +468,7 @@ class Admin extends view
     </section>
     <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.2.0
-    </div>
-  </footer>
+  
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">

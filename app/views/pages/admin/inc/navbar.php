@@ -2,7 +2,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index.html" class="brand-link">
+    <a href="/SE-Project/public/pages/admin" class="brand-link">
       <img src="<?php echo URLROOT?>dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Admin Panel</span>
     </a>
@@ -29,7 +29,7 @@
                with font-awesome or any other icon font library -->
 
           <li class="nav-item">
-            <a href="./index.html" class="nav-link active">
+            <a href="/SE-Project/public/pages/admin" class="nav-link active">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
@@ -47,15 +47,14 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/mailbox/mailbox.html" class="nav-link">
+               <a href="/SE-Project/public/pages/mailbox" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inbox</p>
                 </a>
               </li>
-              <li class="nav-item">
 
               <li class="nav-item">
-                <a href="/SE-Project/public/pages/mailbox" class="nav-link">
+               <a href="/SE-Project/public/pages/compose" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Compose</p>
                 </a>
@@ -93,38 +92,6 @@
             </ul>
           </li>
 
-          <!-- <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
-              <p>
-                Pages
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Home</p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href=" " class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Contact us</p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href=" " class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>About us</p>
-                </a>
-              </li>
-
-            </ul>
-          </li> -->
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

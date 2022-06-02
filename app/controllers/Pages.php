@@ -32,6 +32,7 @@ class Pages extends Controller
         $adminView->output();
     }
 
+    
     public function Compose()
     {
         $viewPath = VIEWS_PATH . 'pages/admin/compose.php';
