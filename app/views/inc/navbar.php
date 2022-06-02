@@ -25,15 +25,17 @@
 		<li class="nav-item">  
       <a class="nav-link" href="<?php echo URLROOT . 'pages/contact'; ?>">Contact</a>
     </li>
-    <li class="nav-item">  
-      <a class="nav-link" href="<?php echo URLROOT . 'pages/booking'; ?>">Booking</a>
-    </li>
+    <?php if (isset($_SESSION['user_name'])) { ?>
     <li class="nav-item">  
       <a class="nav-link" href="<?php echo URLROOT . 'pages/userProfile/userprofile'; ?>">User-Profile</a>
     </li>
     <li class="nav-item">  
       <a class="nav-link" href="<?php echo URLROOT . 'pages/userProfile/securityuserprofile'; ?>">Change Password</a>
     </li>
+    <li class="nav-item">  
+      <a class="nav-link" href="<?php echo URLROOT . 'pages/booking'; ?>">Booking</a>
+    </li>
+    <?php }?>
 		 <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <?php if (isset($_SESSION['user_id'])) {

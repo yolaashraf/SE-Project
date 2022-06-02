@@ -42,7 +42,6 @@ class Index extends View
 
                     <h1 style="color:lightgrey">Aamzing Events</h1>
                     <p style="color:lightgray">Attracts customer from all over egypt</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" style="background-color:rgb(213, 1, 89);color:black">Sign up now!</a></p>
                 </div>
             </div>
         </div>

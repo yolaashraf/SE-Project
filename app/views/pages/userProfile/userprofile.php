@@ -36,29 +36,8 @@ class userprofile extends View
     </nav>
 
     <hr class="mt-0 mb-4">
-    
-    <div class="row">
-        <div class="col-xl-4">
-
-            <!-- Profile picture card-->
-            <div class="card mb-4 mb-xl-0">
-                <div class="card-header">Profile Picture</div>
-                <div class="card-body text-center">
-
-                    <!-- Profile picture image-->
-                    <img class="img-account-profile rounded-circle mb-2" src="../../../images/Images_userProfile/Profilephoto.png" alt="">
-                    
-                    <!-- Profile picture help block-->
-                    <div class="small font-italic text-muted mb-4">JPG or PNG, 300x300</div>
-                    
-                    <!-- Profile picture upload button-->
-                    <label for="file">Upload new image</label>
-                     <input class="btn btn-primary" type="file" id="file"  style="background-color:#d40159; color:White" >
-                </div>
-            </div>
-        </div>
         
-        <div class="col-xl-8">
+        <div class="col-xl-10">
             
         <!-- Account details card-->
             <div class="card mb-4">
