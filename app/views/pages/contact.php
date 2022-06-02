@@ -45,13 +45,13 @@ class Contact extends View
         <p>Feel free to get in touch with us, you can send me message from here. It's my pleasure to help you.</p>
       <form action="#" method="POST">
         <div class="input-box">
-          <input type="text"name="name" placeholder="Enter your name">
+          <input type="text"name="name" placeholder="Enter your name"required="Enter your name">
         </div>
         <div class="input-box">
-          <input type="text" name="email" placeholder="Enter your email">
+          <input type="text" name="email" placeholder="Enter your email"required="Enter your email">
         </div>
         <div class="input-box">
-          <input type="text" name="message" placeholder="Enter your message">
+          <input type="text" name="message" placeholder="Enter your message"required="Enter your message">
         </div>
         <div class="input-box message-box">
           
