@@ -144,7 +144,7 @@ class Users extends Controller
             $UserProfileModel->updateProfile($_POST['Name'],$_POST['Email']);
             $_SESSION['user_name'] = $_POST['Name'];
             $_SESSION['user_email']= $_POST['Email'];
-           
+            
             $viewPath = VIEWS_PATH . 'pages/userProfile/userprofile.php';
             require_once $viewPath;
             $userprofileView = new userprofile($this->getModel(), $this);

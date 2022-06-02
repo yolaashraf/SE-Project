@@ -30,9 +30,6 @@
       <a class="nav-link" href="<?php echo URLROOT . 'pages/userProfile/userprofile'; ?>">User-Profile</a>
     </li>
     <li class="nav-item">  
-      <a class="nav-link" href="<?php echo URLROOT . 'pages/userProfile/securityuserprofile'; ?>">Change Password</a>
-    </li>
-    <li class="nav-item">  
       <a class="nav-link" href="<?php echo URLROOT . 'pages/booking'; ?>">Booking</a>
     </li>
     <?php }?>
