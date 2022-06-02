@@ -14,6 +14,7 @@ class Contact extends View
 {
 	Public function output()
 	{
+    $this->getmessage();
     require APPROOT . '/views/inc/header.php';
     $text = <<<EOT
     
@@ -42,19 +43,25 @@ class Contact extends View
       <div class="right-side">
         <div class="topic-text">Send us a message</div>
         <p>Feel free to get in touch with us, you can send me message from here. It's my pleasure to help you.</p>
-      <form action="#">
+      <form action="#" method="POST">
         <div class="input-box">
-          <input type="text" placeholder="Enter your name">
+          <input type="text"name="name" placeholder="Enter your name">
         </div>
         <div class="input-box">
-          <input type="text" placeholder="Enter your email">
+          <input type="text" name="email" placeholder="Enter your email">
+        </div>
+        <div class="input-box">
+          <input type="text" name="message" placeholder="Enter your message">
         </div>
         <div class="input-box message-box">
           
         </div>
         <div class="button">
-          <input type="button" value="Send Now" >
+        <div class="u-align-center u-form-group u-form-submit u-form-group-9">
+        <input type="submit" value="Send Now" class="u-form-submit">
+      </div
         </div>
+        
       </form>
     </div>
     </div>
@@ -64,6 +71,12 @@ class Contact extends View
   echo $text;
   require APPROOT . '/views/inc/footer.php';
   
+}
+public function getmessage(){
+  if($_SERVER['REQUEST_METHOD'] == 'POST'){
+      $this->model->insertContact($_POST);
+    
+  }
 }
 
 }

@@ -57,7 +57,7 @@
 
       </ul>
     
-        <input class="form-control me-2" id="input_search_bar" type="search" placeholder="Search" aria-label="Search">
+        <input class=" me-2" id="input_search_bar" type="search" placeholder="Search" aria-label="Search">
         <button onclick="search_btn_Clicked()" class="btn btn-outline-success" >Search</button>
 
     </div>

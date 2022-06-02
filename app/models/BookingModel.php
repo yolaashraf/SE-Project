@@ -16,19 +16,5 @@ class BookingModel extends model
         $this->dbh->bind(':third_pic', $body['product_img_3']);
         $this->dbh->bind(':Tax_Card', $body['product_img_4']);
         return $this->dbh->execute();
-    }
-   # public function insertBooking(){
-      #  $query = "INSERT INTO "
-    #}
-     
+    }   
 }
-
-/* 
-Brand name
-Instagram Link
-Purpose
-Brand Logo
-First Picture of a Product Sold
-Second Picture of a Product Sold
-Third Picture of a Product Sold
-Tax Card */
