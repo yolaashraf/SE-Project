@@ -230,22 +230,42 @@ class pending extends view
                           
                            
                         <!--username-->
-                            <div class="mb-3">
-                                <label class="small mb-1" for="outputBrandName">Brand Name</label>
-                            </div>
-                            
-                            <!-- Form Row separator-->
-                            <div class="row gx-3 mb-3">
-                                
-                        
-                            </div>
-                            
-                            <!-- email address -->
-                            <div class="mb-3">
-                                <label class="small mb-1" for="outputBrandLink">Instagram Link </label>
-                                <input class="form-control" id="inputEmailAddress" type="email" placeholder="$brand_name" name="Email"require>
+                        <div class="mb-3">
+                        <label class="small mb-1" for="outputBrandName">Brand Name</label>
+                    </div>
+                    
+                    <!-- email address -->
+                    <div class="mb-3">
+                        <label class="small mb-1" for="outputBrandLink">Instagram Link </label>
 
-                            </div>
+                    </div>
+                    
+
+                <div class="mb-3">
+                        <label class="small mb-1" for="outputBrandLink">Purpose</label>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="small mb-1" for="outputBrandLink">Brand Logo </label>
+
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="small mb-1" for="outputBrandLink">First Picture </label>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="small mb-1" for="outputBrandLink">Second Picture </label>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="small mb-1" for="outputBrandLink">Third Picture </label>
+
+                    </div>
+
                             
                             <!-- button to save changes -->
                             <input class="btn btn-primary" type="submit" value="Save changes" style="background-color:#d40159; color:White" >
@@ -258,34 +278,6 @@ class pending extends view
             </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- /.card-header -->
-            <div class="card-body p-0">
-
-              <!-- /.mailbox-controls -->
-              <div class="mailbox-read-message">
-                <p></p>
-
-                <p></p>
-
-              </div>
-
-            </div>
           </div>
           <!-- /.card -->
         </div>

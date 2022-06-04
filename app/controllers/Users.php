@@ -154,4 +154,25 @@ class Users extends Controller
     
     }
 
+    public function feedback()
+    {
+        $FeedbackModel=$this->getModel();
+
+         if($_SERVER['REQUEST_METHOD'] == 'POST')
+         {
+
+            $FeedbackModel->updateFeedback($_POST['Name'],$_POST['Email'],$_POST['Feedback']);
+            $_SESSION['user_name'] = $_POST['Name'];
+            $_SESSION['user_email']= $_POST['Email'];
+            $_SESSION['user_feedback']= $_POST['Feedback'];
+            
+            $viewPath = VIEWS_PATH . 'pages/feedback.php';
+            require_once $viewPath;
+            $feedbackView = new feedback($this->getModel(), $this);
+            $feedbackView->output();
+         }
+                
+    
+    }
+
 }

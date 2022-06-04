@@ -88,4 +88,12 @@ class Pages extends Controller
         $rejectedView->output();
     }
 
+    public function Feedback()
+    {
+        $viewPath = VIEWS_PATH . 'pages/feedback.php';
+        require_once $viewPath;
+        $feedbackView = new feedback($this->getModel(), $this);
+        $feedbackView->output();
+    }
+
 }
