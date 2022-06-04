@@ -95,7 +95,7 @@ class Index extends View
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
 
-            <img src="../images/HomePhotos/event-schedule-icon-260nw-606709283.jpg copy.tiff" alt="missing image">
+            <img src="../images/HomePhotos/event-schedule-icon-260nw-606709283.jpg copy.jpeg" alt="missing image">
 
             <h2  style="color:rgb(213, 1, 89)">Events</h2>
             <p style="color:rgb(213, 1, 89)">Many interesting events all the year.</p>

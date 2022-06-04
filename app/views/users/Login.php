@@ -25,6 +25,8 @@ class Login extends view
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="<?php echo URLROOT; ?>css/login.css">
       <title>Login Form</title>
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <meta name="google-signin-client_id" content="918052073636-g9ivpd3516d4eofpej2nt58h19g88d71.apps.googleusercontent.com">
     </head>
     <body>
       <?php
@@ -41,7 +43,8 @@ class Login extends view
                 <?php
     echo "<a href='$registerUrl' class='form-control btn btn-lg btn-block'>Sign Up Here</a>"
     ?>        
-            </div>   
+            </div>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>   
         </form> 
     </body>
     </html>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Admin Panel | Dashboard</title>
-
+  
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -20,9 +20,19 @@
   <!-- summernote -->
   <link rel="stylesheet" href="<?php echo URLROOT?>plugins/summernote/summernote-bs4.min.css">
 </head>
+<script>
 
+  
+  function search_btn_Clicked(){
+    console.log("IAM HERE");
+    var variable = document.getElementById('input_search_bar').value;
+    console.log(variable);
+    window.location.replace('http://localhost/SE-Project/public/pages/admin'+variable);
+  }
+  </script>
 
 </body>
+
 </html>
 
 
@@ -63,15 +73,20 @@ class Admin extends view
     <ul class="navbar-nav ml-auto">
       <!-- Navbar Search -->
       <li class="nav-item">
+      
+
         <a class="nav-link" data-widget="navbar-search" href="#" role="button">
           <i class="fas fa-search"></i>
         </a>
         <div class="navbar-search-block">
           <form class="form-inline">
             <div class="input-group input-group-sm">
-              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+
+            
+
+              <input class="form-control form-control-navbar" id="input_search_bar" type="search" placeholder="Search" aria-label="Search">
               <div class="input-group-append">
-                <button class="btn btn-navbar" type="submit">
+                <button onclick="search_btn_Clicked()" class="btn btn-navbar" type="submit">
                   <i class="fas fa-search"></i>
                 </button>
                 <button class="btn btn-navbar" type="button" data-widget="navbar-search">

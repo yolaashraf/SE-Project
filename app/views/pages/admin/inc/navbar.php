@@ -1,4 +1,6 @@
 
+  
+  
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
@@ -90,6 +92,15 @@
                 </a>
               </li>
             </ul>
+          </li>
+
+          <li class="nav-item">
+          <a href="/SE-Project/public/pages/feedback" class="nav-link">
+          <i class="nav-icon far fa-file"></i>
+              <p>
+                Feedback
+              </p>
+            </a>
           </li>
 
         </ul>
